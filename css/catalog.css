@@ -1,0 +1,27 @@
+@import url("blocks/basket.css");
+@import url("blocks/catalog.css");
+@import url("blocks/header.css");
+@import url("blocks/logo.css");
+@import url("blocks/navigation.css");
+@import url("blocks/user-info.css");
+@import url("blocks/wrapper.css");
+@import url("blocks/main.css");
+@import url("blocks/product.css");
+@import url("blocks/footer.css");
+@import url("blocks/social.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=catalog.css.map */

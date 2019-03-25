@@ -1,0 +1,19 @@
+.social{
+    margin: 10px;
+}
+.social__icon{
+    width: 24px;
+    height: 24px;
+    border: 2px solid gray;
+    margin: 10px;
+    background:  center center / cover no-repeat;
+}
+.twitter{
+    background: url(/images/icon/twitter-logo.png);
+}
+.facebook{
+    background: url(/images/icon/facebook-logo.png);
+}
+.instagram{
+    background: url(/images/icon/Instagram-logo.png);
+}

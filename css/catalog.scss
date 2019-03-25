@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('blocks/basket.css');
+@import url('blocks/catalog.css');
+@import url('blocks/header.css');
+@import url('blocks/logo.css');
+@import url('blocks/navigation.css');
+@import url('blocks/user-info.css');
+@import url('blocks/wrapper.css');
+@import url('blocks/main.css');
+@import url('blocks/product.css');
+@import url('blocks/footer.css');
+@import url('blocks/social.css');
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
