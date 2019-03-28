@@ -29,6 +29,7 @@
     }
 ?>
 
+<<<<<<< HEAD
 <h1><?=$template['product']['name']?></h1>
 <img src='<?=$template['product']['photo']?>'>
 <p><?=$template['product']['price']?> руб.</p>
@@ -43,6 +44,11 @@
 
 <script src="/js/product.js"></script>
 
+=======
+<button class='add-to-basket' data-product-id='<?=$template['product']['id']?>'>Добавить в корзину</button>
+
+<script src="/js/product.js"></script>
+>>>>>>> a45cf7286447ac74563d074368dee1b6daa4d4e8
 <?php 
     include($_SERVER['DOCUMENT_ROOT'].'/parts/footer.php');
 ?> 
