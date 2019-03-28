@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Мар 22 2019 г., 15:26
+-- Время создания: Мар 28 2019 г., 15:10
 -- Версия сервера: 10.1.37-MariaDB
 -- Версия PHP: 7.3.1
 
@@ -57,6 +57,27 @@ INSERT INTO `products` (`id`, `name`, `sku`, `description`, `price`, `photo`, `a
 (11, 'Серые кеды', 119, 'Серые кеды', 7900, '/images/catalog/10.jpg', 1, 0),
 (12, 'Светлые джинсы', 324, 'Светлые джинсы', 3500, '/images/catalog/12.jpg', 1, 0);
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `product_sizes`
+--
+
+CREATE TABLE `product_sizes` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `size` varchar(10) NOT NULL,
+  `quantity` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `product_sizes`
+--
+
+INSERT INTO `product_sizes` (`id`, `product_id`, `size`, `quantity`) VALUES
+(1, 1, 'XL', 10),
+(2, 1, 'L', 5);
+
 --
 -- Индексы сохранённых таблиц
 --
@@ -68,6 +89,12 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `product_sizes`
+--
+ALTER TABLE `product_sizes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -76,6 +103,12 @@ ALTER TABLE `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT для таблицы `product_sizes`
+--
+ALTER TABLE `product_sizes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
